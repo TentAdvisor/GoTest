@@ -2,7 +2,7 @@ package main
 
 import (
         "net/http"
-        "time"
+        //"time"
 
         "github.com/prometheus/client_golang/prometheus"
         "github.com/prometheus/client_golang/prometheus/promauto"
@@ -13,7 +13,7 @@ func recordMetrics() {
         go func() {
                 for {
                         opsProcessed.Inc()
-                        time.Sleep(2 * time.Second)
+                        //time.Sleep(2 * time.Second)
                 }
         }()
 }
